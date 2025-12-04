@@ -63,7 +63,7 @@ HIP_ACTUATOR = ElectricActuator(
 )
 
 KNEE_ACTUATOR = ElectricActuator(
-  reflected_inertia=reflected_inertia(ROTOR_INERTIA, HIP_GEAR_RATIO),   # TODO: calculate armature based on rotor inertia and gear ratios
+  reflected_inertia=reflected_inertia(ROTOR_INERTIA, KNEE_GEAR_RATIO),   # TODO: calculate armature based on rotor inertia and gear ratios
   velocity_limit=20.06,      # TODO: Insert max joint velocity (rad/s).
   effort_limit=35.55,        # TODO: Insert torque limit (Nm).
 )
