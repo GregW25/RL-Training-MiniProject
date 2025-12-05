@@ -53,7 +53,7 @@ class MujocoCfg:
   # Solver settings.
   jacobian: Literal["auto", "dense", "sparse"] = "auto"
   solver: Literal["newton", "cg", "pgs"] = "newton"
-  iterations: int = 10
+  iterations: int = 100
   tolerance: float = 1e-8
   ls_iterations: int = 50
   ls_tolerance: float = 0.01
